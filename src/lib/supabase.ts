@@ -1,0 +1,20 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+export const isSupabaseConfigured = (): boolean => {
+  return Boolean(
+    supabaseUrl &&
+    supabaseAnonKey &&
+    !supabaseUrl.includes('placeholder') &&
+    !supabaseUrl.includes('example.com') &&
+    !supabaseUrl.includes('your-project') &&
+    supabaseUrl.startsWith('https://')
+  );
+};
+
+// Create client only if configured to prevent instant runtime crash on empty env vars
+export const supabase = isSupabaseConfigured()
+  ? createClient(supabaseUrl!, supabaseAnonKey!)
+  : null;

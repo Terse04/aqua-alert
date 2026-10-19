@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="aquaGradient" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#13B8A6" />
+      <stop offset="50%" stop-color="#087EBC" />
+      <stop offset="100%" stop-color="#103B54" />
+    </linearGradient>
+    <linearGradient id="rippleGradient" x1="12" y1="28" x2="36" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E9F8F7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#65A878" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <path d="M24 4C24 4 10 18.5 10 28C10 35.732 16.268 42 24 42C31.732 42 38 35.732 38 28C38 18.5 24 4 24 4Z" fill="url(#aquaGradient)"/>
+  <path d="M19 25C19 21.5 24 13 24 13C24 13 29 21.5 29 25C29 27.7614 26.7614 30 24 30C21.2386 30 19 27.7614 19 25Z" fill="url(#rippleGradient)"/>
+  <circle cx="21" cy="22" r="2" fill="#FFFFFF" fill-opacity="0.7"/>
+</svg>

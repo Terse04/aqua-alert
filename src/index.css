@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --navy: #103b54;
+    --primary: #087ebc;
+    --turquoise: #13b8a6;
+    --pale-aqua: #e9f8f7;
+    --fresh-green: #65a878;
+    --slate-text: #263746;
+    --muted-bg: #f5f9fb;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--slate-text);
+    background-color: var(--muted-bg);
+    min-height: 100vh;
+  }
+}
